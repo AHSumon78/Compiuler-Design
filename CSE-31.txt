@@ -1,6 +1,12 @@
-11-Software Engineering
+3rd year, 1st semester,
+11-Software Engineering,Theory
 12-Software Engineering Lab
-21-Database Management System
+21-Database Management System, Theory
 22-Database Management System Lab
-31-Web Engineering
+31-Web Engineering, Theory
 32-Web Engineering Lab
+41-Compiler Design, Theory
+42-Compiler Design Lab
+51-Engineering Ethics and Environment Protection, Theory
+61-Communication Engineering, Theory
+62-Mobile Application Development Lab
