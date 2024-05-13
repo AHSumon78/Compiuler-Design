@@ -1,0 +1,6 @@
+11-Software Engineering
+12-Software Engineering Lab
+21-Database Management System
+22-Database Management System Lab
+31-Web Engineering
+32-Web Engineering Lab

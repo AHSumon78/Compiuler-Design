@@ -4,14 +4,16 @@
 #include<map>
 using namespace std;
 bool isVowel(char ch);
+bool isCharacter(char ch);
+bool isDigit(char ch);
 vector<int> countVowel(string data){
     int l= data.length();
     int vowel=0,letters=0,c=0; 
      vector<int> v(2);
     for(int i=0;i<l;i++){
-      if((data[i]>='A') && (data[i]<='Z') || (data[i]>='a') && (data[i]<='z') ){
+      if(isCharacter(data[i])){
           letters++;
-          if(data[i]=='a' || data[i]=='A' || data[i]=='e'|| data[i]=='E' || data[i]=='i' ||data[i]=='I' ||data[i]=='o'|| data[i]=='O'||data[i]=='u'||data[i]=='U'){
+          if(isVowel(data[i])){
               vowel++;
           }
         }
@@ -54,6 +56,19 @@ bool isVowel(char ch){
         return false;
     }
 }
+bool isCharacter(char ch){
+    ch=tolower(ch);
+    if(ch>='a' && ch<='z')
+    return true;
+    else
+    return false;
+}
+bool isDigit(char ch){
+    if(ch>='0' && ch<='9')
+    return true;
+    else 
+    return false;
+}
 int main(){
     string data ="Munmun is the student of Computer Science & Engineering";
    //a
@@ -69,7 +84,7 @@ int main(){
    string startWithVowel="",startWithConsonant="";
    for(string s:words){
        cout<<s<<endl;
-       if(isVowel(s[0])){
+       if(isVowel(s[0])){          
            startWithVowel+=s;
            startWithVowel+=" ";
        }
